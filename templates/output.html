@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en-uk">
+
+<head> 
+<title>YouTube Downloader 
+</title> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"> 
+<meta name="applicable-device" content="pc,mobile"> 
+
+<link rel="canonical" href="https://ytdl.thekvt.tk/"/> 
+<meta property="og:site_name" content="YouTube Video & Audio Downloader"/> 
+<meta name="description" content=""> 
+<meta name="author" content="TheKVT"> 
+<meta property="og:title" content="YT DL"/> 
+
+<meta property="og:url" content="https://ytdl.thekvt.tk"/> 
+<meta property="og:type" content="website"/> 
+<meta property="og:image" content=""/> 
+
+<link rel="icon" href="https://media.discordapp.net/attachments/869939026638024704/1105309777380261938/youtube-dl.png"  type="image/png"/>
+<style>
+   .footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer p {
+  font-size: 14px;
+  margin: 0;
+  text-align: center;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer a:hover {
+  color: #ccc;
+}
+
+</style>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+</head>
+
+<body>
+      <h1>Download Video</h1>
+<img src="{{t_url}}" alt="Thumbnail">
+  <p>{{title}}</p>
+{% for url in urls %}
+  
+  <a href="{{ url }}" download="yt-dlp" target="_blank">
+    <button>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+  <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+  <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+</svg>&nbsp;&nbsp;
+      {{ x[loop.index - 1] }}</button>
+  </a>
+{% endfor %}
+  
+  <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p>Made with &#x1F499;
+ by
+        <br><b>TheKVT</b></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+  </body>
+</html>
