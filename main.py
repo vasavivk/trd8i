@@ -43,4 +43,5 @@ def download():
     return render_template("output.html", urls=urls,x =x,t_url = t_url,n=n,title=title)
 
 if __name__ == '__main__':
-  app.run(debug=True)
+    app.run(host='0.0.0.0', port=os.environ.get(
+        "PORT", 5000), use_reloader=True, threaded=True)
